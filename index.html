@@ -1,0 +1,25 @@
+<head>
+    <title>Webrtc first playing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.4.7/peerjs.js" integrity="sha512-NE8bcfHSsB2aOmPfpM+dA4MRxpkD/vg+RjP+FEsPfXzP0XwfL2t9akb6iKlxkm9pT+SSTSehU/XQjyMnpisdsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="divChat">
+        <p>Online users</p>
+        <ul id="ulUsers"></ul>
+        <div id="mypeer">My peer id: </div>
+        <br><br>
+        <video id="localStream" width="300"></video>
+        <br><br>
+        <video id="remoteStream" width="300"></video>
+        <br><br>
+        <input type="text" id="remoteId">
+        <button id="btnCallPeer">Call</button>
+    </div>
+    <div id="divRegister">
+        <input type="text" id="txtUserName">
+        <button id="btnSignUp">Sign up</button>
+    </div>
+    <script src="main.js"></script>
+</body>
